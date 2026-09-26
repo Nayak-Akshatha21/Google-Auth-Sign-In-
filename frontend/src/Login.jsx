@@ -2,7 +2,8 @@ import { GoogleLogin , googleLogout } from "@react-oauth/google";
 import {jwtDecode} from "jwt-decode"
 import axios from "axios"
 import { useState } from "react";
-
+import "./index.css";
+import userIcon from "./images/userIcon.webp";
 function Login(){
     const [user,setUser]=useState(null);
 
@@ -39,11 +40,11 @@ function Login(){
         )}
 
         {user && (
-            <div>
-                <img src={user.picture} alt={user.name}/>
+            <div className="userLogin">
+                <img className="userIcon" src={userIcon} alt={user.name}/>
                 <h4>{user.name}</h4>
                 <p>{user.email}</p>
-                <button onClick={handleLogout}>Logout</button>
+                <button onClick={handleLogout} className="logout">Logout</button>
             </div>
         )}
         </>

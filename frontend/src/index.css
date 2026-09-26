@@ -1,0 +1,31 @@
+.userLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     min-width: auto;
+     background-color: rgb(212, 235, 247);
+    width: 350px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logout{
+    padding: 15px;
+    width: 100px;
+    color: white;
+    background-color: brown;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.userIcon{
+    width: 100px;
+}
